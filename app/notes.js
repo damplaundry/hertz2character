@@ -73,21 +73,15 @@ Notes.prototype.clearActive = function () {
   }
 };
 
+let outputString = "";
 Notes.prototype.update = function (note) {
-  let noteNameOctave = `${note.name}${note.octave}`;
-  console.log(`${noteNameOctave}: ${noteMap[noteNameOctave]}`);
-
-  noteNameOctave = 4; {
-     if (note == "A4") {
-       console.log("A");
-     }
-     if (note == "G4") {
-     console.log("G");
-   }
-     if (note == "G#4") {
-  console.log("W");
-   }
+  if (note.octave >= 2 && note.octave <= 6){
+    outputString += noteMap[note.octave][note.name];
+    console.log(outputString);
   }
+  // console.log(`${note.name}${note.octave}: ${noteMap[note.octave][note.name]}`);
+
+
   if (note.value in this.$notesMap) {
     this.active(this.$notesMap[note.value]);
     this.$frequency.childNodes[0].textContent = parseFloat(
