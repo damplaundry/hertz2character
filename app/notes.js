@@ -74,13 +74,15 @@ Notes.prototype.clearActive = function () {
 };
 
 let outputString = "";
-Notes.prototype.update = function (note) {
-  if (note.octave >= 2 && note.octave <= 6){
+let prevNote;
+let noteStart;
+Notes.prototype.update = function (note, amplitude) {
+  if (note.octave >= 2 && note.octave <= 6 && amplitude >= 75){
     outputString += noteMap[note.octave][note.name];
     console.log(outputString);
   }
   // console.log(`${note.name}${note.octave}: ${noteMap[note.octave][note.name]}`);
-
+if (noteStart > 3000 )
 
   if (note.value in this.$notesMap) {
     this.active(this.$notesMap[note.value]);

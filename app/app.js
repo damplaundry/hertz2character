@@ -75,7 +75,10 @@ Application.prototype.updateFrequencyBars = function () {
 };
 
 Application.prototype.update = function (note) {
-  this.notes.update(note);
+  if (this.frequencyData) {
+    console.log(this.frequencyData[note.value]);
+    this.notes.update(note, this.frequencyData[note.value]);
+  }
   this.meter.update((note.cents / 50) * 45);
 };
 
