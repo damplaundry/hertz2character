@@ -178,12 +178,22 @@ body {
   background-color: transparent;
 }
 
-.button-clear {
+.button_clear {
   position: fixed;
   bottom: 225px;
   right: 50%;
   border: none;
   background-color: #ffb1ed;
   color: rgb(255, 244, 252);
+  cursor: help;
+}
+
+.button_copy {
+  position: fixed;
+  bottom: 225px;
+  right: 30%;
+  border: none;
+  background-color: #bfb1ff;
+  color: rgb(252, 244, 255);
   cursor: help;
 }
