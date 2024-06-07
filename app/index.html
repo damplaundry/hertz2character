@@ -24,24 +24,19 @@
         </div>
       </div>
       <div class="a4">A<sub>4</sub> = <span>440</span> Hz</div>
-      
-      <textarea readonly class="textBox" id="textareaEl" rows="10" cols="60">
-Your Text Will Go Here 
-  </textarea>
+      <div class="flex ui">
+        <textarea readonly class="textBox" id="textareaEl" rows="10" cols="60">
+        Your Text Will Go Here 
+        </textarea>
 
-      <label class="auto">
-        Auto
-        <input type="checkbox" checked />
-      </label>
+        <label class="auto">
+          Auto
+          <input type="checkbox" checked />
+        </label>
 
-      <div>
         <button class="button_clear" id="button-clear">Clear Text</button>
-      </div>
-
-      <div>
         <button class="button_copy" id="button-copy">Copy text to clipboard</button>
       </div>
-
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
       <script src="https://cdn.jsdelivr.net/npm/aubiojs@0.1.1/build/aubio.min.js"></script>
       <script src="constants.js"></script>
