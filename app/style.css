@@ -193,13 +193,14 @@ body {
   border: none;
   background-color: #b1bdff;
   color: rgb(252, 244, 255);
-  cursor: pointer;
+  cursor: no-drop;
   width: 40%;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .ui {
