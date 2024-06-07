@@ -178,13 +178,23 @@ body {
   background-color: #ffb1ed;
   color: rgb(255, 244, 252);
   cursor: help;
+  width: 40%;
 }
 
 .button_copy {
   border: none;
   background-color: #bfb1ff;
   color: rgb(252, 244, 255);
-  cursor: help;
+  cursor: pointer;
+  width: 40%;
+}
+
+.button_smile {
+  border: none;
+  background-color: #b1bdff;
+  color: rgb(252, 244, 255);
+  cursor: pointer;
+  width: 40%;
 }
 
 .flex {
