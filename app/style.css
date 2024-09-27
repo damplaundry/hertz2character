@@ -13,6 +13,10 @@ body {
   user-select: none;
 }
 
+#overlay {
+  rgba(200, 50, 75, 20);
+}
+
 .notes {
   margin: auto;
   width: 400px;
@@ -41,12 +45,10 @@ body {
   overflow: -moz-scrollbars-none;
   white-space: nowrap;
   -ms-overflow-style: none;
-  -webkit-mask-image: -webkit-linear-gradient(
-    left,
-    rgba(185, 35, 145, 0.793),
-    #990fa3,
-    rgb(167, 42, 159)
-  );
+  -webkit-mask-image: -webkit-linear-gradient(left,
+      rgba(185, 35, 145, 0.793),
+      #990fa3,
+      rgb(167, 42, 159));
 }
 
 .notes-list::-webkit-scrollbar {
@@ -163,6 +165,7 @@ body {
 
 .textBox {
   border: 2px ridge rgb(57, 26, 199);
+  border-radius: 10px;
   opacity: 50%;
   height: 6em;
 }
@@ -174,15 +177,18 @@ body {
 }
 
 .button_clear {
-  border: none;
-  background-color: #ffb1ed;
-  color: rgb(255, 244, 252);
-  cursor: help;
-  width: 40%;
+ border: none;
+ border-radius: 30px;
+ background-color: #ffb1ed;
+ color: rgb(255, 244, 252);
+ cursor: help;
+ width: 40%;
+
 }
 
 .button_copy {
   border: none;
+  border-radius: 30px;
   background-color: #bfb1ff;
   color: rgb(252, 244, 255);
   cursor: pointer;
