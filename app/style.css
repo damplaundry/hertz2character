@@ -13,9 +13,6 @@ body {
   user-select: none;
 }
 
-#overlay {
-  rgba(200, 50, 75, 20);
-}
 
 .notes {
   margin: auto;
@@ -178,7 +175,7 @@ body {
 
 .button_clear {
  border: none;
- border-radius: 30px;
+ border-radius: 5px;
  background-color: #ffb1ed;
  color: rgb(255, 244, 252);
  cursor: help;
@@ -188,9 +185,18 @@ body {
 
 .button_copy {
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
   background-color: #bfb1ff;
   color: rgb(252, 244, 255);
+  cursor: pointer;
+  width: 40%;
+}
+
+.button_funky {
+  border: none;
+  border-radius: 5px;
+  background-color: #f7b1ff;
+  color: rgb(255, 244, 252);
   cursor: pointer;
   width: 40%;
 }
